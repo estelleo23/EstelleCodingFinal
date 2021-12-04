@@ -1,0 +1,22 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Index page title{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>My Favorite Things</h1>
+  <p>Here is a list of some of my favorite things organized by category.</p>
+  <h2>There are 5 categories: </h2>
+  <p>Books, Movies, Shows, Holidays, and Colors.</p>
+  <div class="row">
+    {% for favorites in favorites.favorites %}
+      <div class="col-md-6">
+        <img src="img/{{ favorites.slug }}.jpg" alt="" class="img-fluid">
+        <h3><a href="favorites/{{ favorites.slug }}.html">{{ favorites.category }}</a></h3>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

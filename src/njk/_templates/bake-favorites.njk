@@ -1,0 +1,21 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ category }}{% endblock %}
+
+{% block page_description %}{{ category }}{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid mb-4">
+      </div>
+      <div class="col-md-6">
+          <h1>{{ category }}</h1>
+          <p>{{ best | safe }}</p>
+      </div>
+    </div>
+  </article>
+{% endblock %}

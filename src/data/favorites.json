@@ -1,0 +1,29 @@
+{
+    "favorites": [
+        {
+            "category": "Book",
+            "slug": "book",
+            "best": "Crush by Richard Siken"
+        },
+        {
+            "category": "Movie",
+            "slug": "movie",
+            "best": "Hairspray (2007)"
+        },
+        {
+            "category": "Shows",
+            "slug": "show",
+            "best": "Russian Doll"
+        },
+        {
+            "category": "Holiday",
+            "slug": "holiday",
+            "best": "New Years Eve"
+        },
+        {
+            "category": "Color",
+            "slug": "color",
+            "best": "Sky Blue"
+        }
+    ]
+}
